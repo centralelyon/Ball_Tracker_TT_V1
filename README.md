@@ -9,3 +9,7 @@ Ce programme permet de retirer la moyenne de l'arrière plan d'une vidéo avec l
 <h2> Mise en forme des données </h2>
 
 Les données sont extraites d'un CSV obtenu grâce à Tracker (dataset d'entrainement), on le convertit en JSON dans le format de TTNet : {"numéro de la frame" : { "x": 100, "y": 50}, ... }
+
+<h2> Premier réseau de neurones : Classification </h2>
+
+En effet on apprend tout d'abord à notre algorithme à reconnaitre les images qui contiennent une balle de tennis de table et celles qui n'en contiennent pas afin que notre programme ne calcule pas sur des images inutiles. Problème classique de classification avec 2 sorties (type chien/chat)
