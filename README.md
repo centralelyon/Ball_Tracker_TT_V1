@@ -5,3 +5,7 @@
 Le premier programme est appliqué aux frames extraites de la video (extraite avec opencv .read(video))
 
 Ce programme permet de retirer la moyenne de l'arrière plan d'une vidéo avec l'aide de OpenCV, pour cela on crée un BackgroundSusbstractor (MOG2 ou KNN) qui va venir apprendre et modifier chaque image de la vidéo. On parcourt les frames de la vidéo avec cv2.VideoCapture et cv2.read
+
+<h2> Mise en forme des données </h2>
+
+Les données sont extraites d'un CSV obtenu grâce à Tracker (dataset d'entrainement), on le convertit en JSON dans le format de TTNet : {"numéro de la frame" : { "x": 100, "y": 50}, ... }
