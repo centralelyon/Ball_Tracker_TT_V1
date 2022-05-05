@@ -13,3 +13,5 @@ Les données sont extraites d'un CSV obtenu grâce à Tracker (dataset d'entrain
 <h2> Premier réseau de neurones : Classification </h2>
 
 En effet on apprend tout d'abord à notre algorithme à reconnaitre les images qui contiennent une balle de tennis de table et celles qui n'en contiennent pas afin que notre programme ne calcule pas sur des images inutiles. Problème classique de classification avec 2 sorties (type chien/chat)
+
+Pour entrainer cet algorithme il faut séparer les 2 manuellement, j'utilise le fichier CSV qui comporte les frames annotées (les frames non annotées ne contiennent pas la balle), cet algo est dans Tri_Train_Test.py
