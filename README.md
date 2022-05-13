@@ -1,5 +1,9 @@
 <h1> Tracker de ball de tennis de table </h1>
 
+<h2> Commentaire </h2>
+
+Ce programme a pour vocation de permettre de tracker une balle de tennis de table pendant un match, l'architecture est simple : 2 réseaux de neurones, le premier regarde si une image contient une balle ou non (97,4% de réussite sur le dataset de test) / Puis les images selectionnées (qui comportent donc une balle) passent dans un deuxième réseau de neurones qui malheureusement n'est pas concluant (limité à des oscillations à 60 de MSE après 150 epochs) --> Projet V2 en cours de création
+
 <h2> Pré-traitement </h2>
 
 Le premier programme est appliqué aux frames extraites de la video (extraite avec opencv .read(video))
